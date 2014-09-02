@@ -11,12 +11,12 @@ class Mastermind
 
 		10.times do |i|
 			
-			puts "This is attempt number #{i + 1} out of 10 you have #{@player.turns - i} chances left to"
-			puts "crack the color code"
+			puts "This is attempt number #{i + 1} out of 10, you have #{@player.turns - i} chances left to"
+			puts "crack the color code!"
 			current_guess = @player.code_break
 			
 			if @computer.is_exact?(current_guess)
-				puts ""
+				puts "You were able to crack the code!"
 				puts "You Won!"
 					break
 			
