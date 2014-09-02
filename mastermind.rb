@@ -60,7 +60,7 @@ class Computer
 
 	def is_close?(guess) 
 		if get_matches(guess) == []
-			puts "You have no matches"
+			puts "You have no matches."
 		
 		else
 			puts "You're close! The code contains #{get_matches(guess)}"
